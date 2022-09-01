@@ -15,7 +15,8 @@ class EmpleadosController extends Controller
     public function index()
     {
         //
-        return view('empleados.index');
+        $datos['empleados']=empleados::paginate(5);
+        return view('empleados.index', $datos);
     }
 
     /**
@@ -71,9 +72,12 @@ class EmpleadosController extends Controller
      * @param  \App\Models\empleados  $empleados
      * @return \Illuminate\Http\Response
      */
-    public function edit(empleados $empleados)
+    public function edit($id)
     {
         //
+        $empleado = empleados::findOrfail($id);
+
+        return view('empleados.edit', compact('empleado'));
     }
 
     /**
@@ -83,9 +87,11 @@ class EmpleadosController extends Controller
      * @param  \App\Models\empleados  $empleados
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, empleados $empleados)
+    public function update(Request $request, $id)
     {
         //
+        $datosEmpleado=request()->except(['_token','_method']);
+        empleados::where('id','=',$id)->update($datosEmpleado);
     }
 
     /**
@@ -94,8 +100,11 @@ class EmpleadosController extends Controller
      * @param  \App\Models\empleados  $empleados
      * @return \Illuminate\Http\Response
      */
-    public function destroy(empleados $empleados)
+    public function destroy($id)
     {
         //
+        empleados::destroy($id);
+
+        return redirect('empleados');
     }
 }
