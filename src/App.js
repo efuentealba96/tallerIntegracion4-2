@@ -4,6 +4,7 @@ import LoginButton from './components/LoginButton';
 import Profile from './components/Profile';
 import LogoutButton from './components/LogoutButton';
 import {useAuth0} from '@auth0/auth0-react';
+import SearchBox from './components/SearchBox';
 
 
 function App() {
@@ -12,10 +13,10 @@ function App() {
     <div className="App">
       <h1>Application</h1>
       {
-        isAuthenticated ? <LogoutButton/> : <LoginButton/>
+        (isAuthenticated) 
+        ? <><LogoutButton/><SearchBox/></>
+        : <LoginButton/> 
       }
-      
-      <Profile/>
     </div>
   );
 }
