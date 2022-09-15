@@ -59,3 +59,19 @@
   width: 20%;
   
 }
+
+.main_content {
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.main_content .main_content--grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.main_content .main_content--grid img{
+  width: 100%;
+}
