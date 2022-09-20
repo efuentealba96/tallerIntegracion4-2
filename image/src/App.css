@@ -4,10 +4,11 @@
   padding: 10px;
   margin-top: 1rem;
   background-color: black;
+  display: flex;
 }
 
 .search_box .search_box--input{
-  width: 80px;
+  width: 1200px;
   padding: 10px;
   outline: none;
 }
@@ -32,7 +33,7 @@
   gap: 1rem;
 }
 
-.main__content .main__content--grid {
+.main__content .main__content--grid img {
   width: 100%;
   max-width: 100%;
   aspect-ratio: 1;

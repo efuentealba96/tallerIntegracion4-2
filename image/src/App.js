@@ -7,7 +7,7 @@ function App() {
 
   const buscarResultados = async () => {
     const API_KEY = 'g4RvtVhDz5_jZwyc8L6LNCKiMNdSydU_LdWB4SKvKjo'
-    const URL = 'https://api.unsplash.com/search/photos/?client_id=${API_KEY}&query=${valor}&per_page=20';
+    const URL = `https://api.unsplash.com/search/photos/?client_id=${API_KEY}&query=${valor}&per_page=20`;
 
     const response = await fetch(URL);
     const data = await response.json();
@@ -25,10 +25,10 @@ function App() {
       <div className='main__content'>
         <div className='main__content--grid'>
           {
-          resultados.map((elementos, indice) => {
-            return(
-                <img key={indice} src={elementos.urls.regular}/>
-            )
+            resultados.map((elementos, indice) => {
+              return(
+                <img alt="asd" key={indice} src={elementos.urls.regular}/>
+              )
             })
           }
           </div>
