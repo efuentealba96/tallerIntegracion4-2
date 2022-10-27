@@ -1,38 +1,23 @@
-import './App.css';
-import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
-import Home from './containers/Home';
-import Solicitud from './containers/Solicitud';
-import LoginPage from './components/LoginPage';
-import Sidebar from './components/Sidebar';
-import Inscripcion from './containers/Inscripcion';
-import Documentos from './containers/Documentos';
-import InfoPersonal from './containers/InfoPersonal';
-import Contactos from './containers/Contactos';
-import InfoAcademica from './containers/InformacionAcademica';
+import React from 'react';
+import { Provider } from 'react-redux';
+import GlobalStyles from '@iso/assets/styles/globalStyle';
+import { store } from './redux/store';
+import Boot from './redux/boot';
+import Routes from './router';
+import AppProvider from './AppProvider';
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        
-        <Route path="/" element={<Sidebar/>}>
-          <Route  exact path  ="/Home" name ="Home" element={<Home/>}></Route>
-          <Route path ="/Solicitud" element={<Solicitud/>}></Route> 
-          <Route path ="/Inscripcion" element ={<Inscripcion/>}></Route>
-          <Route path="/Documentos" element={<Documentos/>}></Route>
-          <Route path="/InfoPersonal" element={<InfoPersonal/>}></Route>
-          <Route path ="/InfoAcademica" element={<InfoAcademica/>}></Route>
-          <Route path="/Contactos" element={<Contactos/>}></Route>
-        </Route>
-        <Route path ="/Login" element={<LoginPage/>}></Route>
-      </Routes>
-      
-      
-      
-    
-     
-    </Router>
-  );
-}
+const App = () => (
+  <Provider store={store}>
+    <AppProvider>
+      <>
+        <GlobalStyles />
+        <Routes />
+      </>
+    </AppProvider>
+  </Provider>
+);
+Boot()
+  .then(() => App())
+  .catch(error => console.error(error));
 
 export default App;
