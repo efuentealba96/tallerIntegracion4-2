@@ -1,0 +1,36 @@
+.heading, .t {
+    font-size: x-large;
+}
+
+.heading {
+    background-color: #00B9FF;
+}
+
+.s1, .s2 {
+    width: 40%;
+    background-color: #C9DEE7;
+}
+
+.r {
+    background-color: #055B80;
+    margin-left: 41.9%;
+}
+
+.rojo1 {
+    background-color: #055B80;
+    width: fit-content;
+    margin-left: 20%;
+}
+
+.rojo {
+    background-color: #055B80;
+    width: fit-content;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.azol {
+    background-color: #055B80;
+    width: fit-content;
+    margin-left: 20%;
+}
