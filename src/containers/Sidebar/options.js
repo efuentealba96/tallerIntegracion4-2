@@ -51,7 +51,7 @@ const options = [
 		leftIcon: 'ion-android-checkbox-outline',
 	},
 	{
-		key: 'Notas Parciales',
+		key: 'NotasParciales',
 		label: 'Notas Parciales',
 		leftIcon: 'ion-briefcase',
 	},

@@ -3,7 +3,7 @@ export const colors = {
     deep: 'rgb(0, 121, 191)',
     light: 'lightblue',
     lighter: '#d9fcff',
-    soft: '#E6FCFF',
+    soft: 'ffffff',
   },
   black: '#4d4d4d',
   shadow: 'rgba(0,0,0,0.2)',
