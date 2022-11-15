@@ -20,7 +20,8 @@
 </head>
 
 <body>
-    <img src="http://pau-mapu.cl/wp-content/uploads/2020/04/uct-logo.png" alt="">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Universidad_Catolica_de_Temuco_Logo_Vertical.png"
+        alt="">
     <div class="titulo">
         <h3>VICERRECTORÍA ACADÉMICA</h3><br>
         <h3>DIRECCIÓN DE ADMISIÓN Y REGISTROS ACADÉMICOS</h3>
@@ -35,7 +36,8 @@
     @endforeach
     <p>Se extiende el presente certificado, a petición del interesado/a para trámites de:</p>
     {{-- este campo se llena con el select --}}
-    <p><b>PARA LOS FINES QUE ESTIME CONVENIENTES</b></p>
+    <p><b>{{ $asuntos }}</b></p>
+
 </body>
 
 </html>

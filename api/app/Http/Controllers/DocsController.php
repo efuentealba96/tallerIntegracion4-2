@@ -11,12 +11,18 @@ use Barryvdh\DomPDF\Facade\Pdf;
 use DB;
 class DocsController extends Controller
 {
-    public function imprimir(){
+    public function imprimir(Request $request){
     //? en esta seccion se crea el pdf en base a una plantilla
     //? esta plantilla se encuentra en una capeta llamada pdf que esta en viwes
-    $user = DB::table('dbo.usuario')->get();
-    $pdf = Pdf::loadView('pdf.plantilla',['usuario'=>$user]);
+    $user = DB::table('dbo.usuarios')
+    ->join('carreras','usuarios.idCarrera','=','carreras.codigo_carrera')
+    ->join('facultades','carreras.idfacultad','=','facultades.idFacultad')
+    ->select(DB::raw('usuarios.nombre,usuarios.rut,carreras.carrera'))
+    ->where('usuarios.rut',$request['rut'])
+    ->get();
+    // $pdf = Pdf::loadView('pdf.plantilla',['usuario'=>$user]);
+    $pdf = Pdf::loadView('pdf.plantilla',['usuario'=>$user,'asuntos'=>$request['asunto']]);
     return $pdf->stream();
-    }
+}
 
 }

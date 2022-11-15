@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DocsController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\LoginController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -23,5 +24,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 //? en estas secciones creamos la ruta y la funcion que va a tener en base a un controlador
-Route::get('/document',[DocsController::class,'imprimir']);
-Route::get('/user',[UserController::class, 'viewUser']);
+Route::post('/document',[DocsController::class,'imprimir']);
+Route::post('/login',[LoginController::class,'Login']);
+Route::post('/user',[UserController::class, 'viewUser']);
