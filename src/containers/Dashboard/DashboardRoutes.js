@@ -298,7 +298,7 @@ const routes = [
 		component: lazy(() => import('@iso/containers/NotasParciales')),
 	},
 	{
-		path: 'Calendario',
+		path: 'Inscripcion',
 		component: lazy(() => import('@iso/containers/Inscripcion')),
 	},
 	

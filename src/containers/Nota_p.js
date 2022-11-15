@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import LayoutContentWrapper from "@iso/components/utility/layoutWrapper";
 import LayoutContent from "@iso/components/utility/layoutContent";
 import "./estiloNota.css";
+import ChatBot from "./chatbots/index"
 
 export default class extends Component {
   render() {
@@ -64,8 +65,10 @@ export default class extends Component {
               </div>
             </div>
           </div>
+          <ChatBot/>
         </LayoutContent>
       </LayoutContentWrapper>
+
     );
   }
 }

@@ -195,7 +195,7 @@ export default function Cuerpo() {
         <div class="panel-heading">
             <h3 style={{color:"black" , backgroundColor:"#1EA6C8 "}}>Formulario apelacion para Causal de eliminacion</h3>
             <p style={{fontSize:"13px;"}}>El formulario debe ser completado y entregado impreso en tu carrera. </p>
-            <a href="certificados_firmas_digitales/documentos/formulario_apelacion.pdf" target="_blank"> Pincha aquí para descargar el formulario</a>
+            <a href="https://estudiantes.uct.cl/certificados_firmas_digitales/documentos/formulario_apelacion.pdf" > Pincha aquí para descargar el formulario</a>
         </div>
         </div>
     )
