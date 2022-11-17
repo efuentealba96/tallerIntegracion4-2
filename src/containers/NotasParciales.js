@@ -3,7 +3,7 @@ import LayoutContentWrapper from '@iso/components/utility/layoutWrapper';
 import LayoutContent from '@iso/components/utility/layoutContent';
 import CardsNotas from './Cards/CardsNotas';
 import Cuerpo from './NotasParciales/index'
-import ChatBot from "./chatbots/index"
+import Chatbot from "./chatbots/index"
 export default class extends Component {
   render() {
     return (
@@ -11,7 +11,7 @@ export default class extends Component {
         <LayoutContent>
           <CardsNotas/>
           <Cuerpo/>
-          <ChatBot/>
+          <Chatbot/>
         </LayoutContent>
       </LayoutContentWrapper>
     );

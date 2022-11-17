@@ -10,7 +10,7 @@ export default class extends Component {
       <LayoutContentWrapper style={{ height: '100vh' }}>
         <LayoutContent>
           <Cards/>
-          <Cuerpo></Cuerpo>
+          <Cuerpo/>
           <ChatBot/>
         </LayoutContent>
       </LayoutContentWrapper>
