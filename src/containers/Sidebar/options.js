@@ -12,7 +12,11 @@ const options = [
 	// },
 	
 	
-	
+	{
+		key: 'my-profile',
+		label: 'profile',
+		leftIcon: 'ion-person',
+	},
 
 
 	
@@ -50,11 +54,6 @@ const options = [
 		key: 'NotasParciales',
 		label: 'Notas Parciales',
 		leftIcon: 'ion-briefcase',
-	},
-	{
-		key: 'my-profile',
-		label: 'profile',
-		leftIcon: 'ion-person',
 	},
 	
 ];

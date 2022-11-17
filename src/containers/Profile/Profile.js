@@ -7,7 +7,6 @@ import Following from './Following/Following';
 import Wrapper, { ContentWrapper } from './Profile.styles';
 import { useSelector, useDispatch } from 'react-redux';
 import profileActions from '@iso/redux/profile/actions';
-
 import "./estiloPerfil.css"
 
 const MyProfile = () => {
@@ -131,7 +130,6 @@ const MyProfile = () => {
         </div>
       )}
     </Wrapper>
-    
   );
 };
 

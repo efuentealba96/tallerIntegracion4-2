@@ -26,8 +26,6 @@ import StackedAreaChart from '../Charts/Recharts/Charts/StackedAreaChart';
 import GoogleChart from 'react-google-charts';
 import * as googleChartConfigs from '../Charts/GoogleChart/config';
 import IntlMessages from '@iso/components/utility/intlMessages';
-import uct from "./../../assets/images/universidadhero.jpg"
-import uctespera from "./../../assets/images/UniCt.jpg"
 
 const tableDataList = clone(dataList);
 tableDataList.size = 5;
@@ -73,30 +71,29 @@ const SIGNLE_PROGRESS_WIDGET = [
 const STICKER_WIDGET = [
   {
     number: 'widget.stickerwidget1.number',
-    text: 'Calendario',
-    icon: 'ion-calendar',
+    text: 'widget.stickerwidget1.text',
+    icon: 'ion-email-unread',
     fontColor: '#ffffff',
     bgColor: '#7266BA',
-    href:'https://www.uct.cl/calendario-academico/'
   },
   {
     number: 'widget.stickerwidget1.number',
-    text: 'DGE',
+    text: 'widget.stickerwidget2.text',
     icon: 'ion-android-camera',
     fontColor: '#ffffff',
     bgColor: '#42A5F6',
   },
   {
     number: 'widget.stickerwidget1.number',
-    text: 'Dara',
-    icon: 'ion-compass',
+    text: 'widget.stickerwidget3.text',
+    icon: 'ion-chatbubbles',
     fontColor: '#ffffff',
     bgColor: '#7ED320',
   },
   {
     number: 'widget.stickerwidget1.number',
-    text: 'Acompañamiento Daas',
-    icon: 'ion-home',
+    text: 'widget.stickerwidget4.text',
+    icon: 'ion-android-cart',
     fontColor: '#ffffff',
     bgColor: '#F75D81',
   },
@@ -104,27 +101,27 @@ const STICKER_WIDGET = [
 
 const SALE_WIDGET = [
   {
-    label: 'Nuevo',
-    price: '21/12/2022',
-    details: 'Se acerca el final de Semestre',
+    label: 'widget.salewidget1.label',
+    price: 'widget.salewidget1.price',
+    details: 'widget.salewidget1.details',
     fontColor: '#F75D81',
   },
   {
-    label: 'Pago',
-    price: '05/12/2022',
-    details: 'Ultima fecha para pagar arancel ',
+    label: 'widget.salewidget2.label',
+    price: 'widget.salewidget2.price',
+    details: 'widget.salewidget2.details',
     fontColor: '#F75D81',
   },
   {
-    label: 'Tne',
-    price: 'En Cualquier Momento y Lugar',
-    details: 'si has perdido tu Tne comunicate con nosotros DGE ',
+    label: 'widget.salewidget3.label',
+    price: 'widget.salewidget3.price',
+    details: 'widget.salewidget3.details',
     fontColor: '#F75D81',
   },
   {
-    label: 'DAAS',
-    price: 'LA DAAS esta contigo',
-    details: 'acompañamiento Academico',
+    label: 'widget.salewidget4.label',
+    price: 'widget.salewidget4.price',
+    details: 'widget.salewidget4.details',
     fontColor: '#F75D81',
   },
 ];
@@ -134,35 +131,35 @@ const CARD_WIDGET = [
     icon: 'ion-android-chat',
     iconcolor: '#42A5F5',
     number: 'widget.cardwidget1.number',
-    text: 'Correos',
+    text: 'widget.cardwidget1.text',
   },
   {
-    icon: 'ion-document',
+    icon: 'ion-music-note',
     iconcolor: '#F75D81',
     number: 'widget.cardwidget2.number',
-    text: 'Avance de los Cursos Inscritos Actuales',
+    text: 'widget.cardwidget2.text',
   },
   {
     icon: 'ion-trophy',
     iconcolor: '#FEAC01',
-    number: '21',
-    text: 'Cursos Completos',
+    number: 'widget.cardwidget3.number',
+    text: 'widget.cardwidget3.text',
   },
 ];
 
 const PROGRESS_WIDGET = [
   {
-    label: 'Total de Curso de la Carrera',
-    details: '60 % Completado',
+    label: 'widget.progresswidget1.label',
+    details: 'widget.progresswidget1.details',
     icon: 'ion-archive',
     iconcolor: '#4482FF',
-    percent: 60,
+    percent: 50,
     barHeight: 7,
     status: 'active',
   },
   {
-    label: 'Electivos DDO-ELte-ELAC',
-    details: '80% completado',
+    label: 'widget.progresswidget2.label',
+    details: 'widget.progresswidget2.details',
     icon: 'ion-pie-graph',
     iconcolor: '#F75D81',
     percent: 80,
@@ -170,11 +167,11 @@ const PROGRESS_WIDGET = [
     status: 'active',
   },
   {
-    label: 'Cursos Eliminados, Nota P , Reprovados',
-    details: '10% de tu total de Cursos ',
+    label: 'widget.progresswidget3.label',
+    details: 'widget.progresswidget3.details',
     icon: 'ion-android-download',
     iconcolor: '#494982',
-    percent: 10,
+    percent: 65,
     barHeight: 7,
     status: 'active',
   },
@@ -250,9 +247,10 @@ export default function() {
             <IsoWidgetsWrapper>
               <IsoWidgetBox>
                 {/* TABLE */}
-                <div style={{fontSize:"40px"}}>Te invitamos a responder la encueta EODD</div>
-                <h1>Respondenos para saber tu opninion </h1>
-                <img src={uct}></img>
+                <TableViews.SimpleView
+                  tableInfo={tableinfos[0]}
+                  dataList={tableDataList}
+                />
               </IsoWidgetBox>
             </IsoWidgetsWrapper>
           </Col>
@@ -326,18 +324,79 @@ export default function() {
           <Col lg={12} md={24} sm={24} xs={24} style={colStyle}>
             <IsoWidgetsWrapper>
               <IsoWidgetBox height={448} style={{ overflow: 'hidden' }}>
-                <div>
-                  <h1 style={{fontSize:"40px"}} >Pagina en proceso de Cambio </h1>
-                </div>
-                <img style={{width:"500px"}}src={uctespera}></img>
+                <StackedAreaChart {...stackConfig} />
               </IsoWidgetBox>
             </IsoWidgetsWrapper>
           </Col>
         </Row>
 
-        
+        <Row style={rowStyle} gutter={0} justify="start">
+          <Col md={12} sm={24} xs={24} style={colStyle}>
+            <IsoWidgetsWrapper>
+              <IsoWidgetBox height={470} style={{ overflow: 'hidden' }}>
+                <GoogleChart
+                  {...googleChartConfigs.BarChart}
+                  chartEvents={chartEvents}
+                />
+              </IsoWidgetBox>
+            </IsoWidgetsWrapper>
+          </Col>
 
-        
+          <Col md={12} sm={24} xs={24} style={colStyle}>
+            <IsoWidgetsWrapper>
+              <IsoWidgetBox height={470} style={{ overflow: 'hidden' }}>
+                <GoogleChart {...googleChartConfigs.Histogram} />
+              </IsoWidgetBox>
+            </IsoWidgetsWrapper>
+          </Col>
+        </Row>
+
+        <Row style={rowStyle} gutter={0} justify="start">
+          <Col lg={8} md={12} sm={12} xs={24} style={colStyle}>
+            <IsoWidgetsWrapper>
+              {/* VCard Widget */}
+              <VCardWidget
+                style={{ height: '450px' }}
+                src={userpic}
+                alt="Jhon"
+                name={<IntlMessages id="widget.vcardwidget.name" />}
+                title={<IntlMessages id="widget.vcardwidget.title" />}
+                description={
+                  <IntlMessages id="widget.vcardwidget.description" />
+                }
+              >
+                <SocialWidget>
+                  {SOCIAL_PROFILE.map((profile, idx) => (
+                    <SocialProfile
+                      key={idx}
+                      url={profile.url}
+                      icon={profile.icon}
+                      iconcolor={profile.iconcolor}
+                    />
+                  ))}
+                </SocialWidget>
+              </VCardWidget>
+            </IsoWidgetsWrapper>
+          </Col>
+
+          <Col lg={8} md={12} sm={12} xs={24} style={colStyle}>
+            <IsoWidgetsWrapper>
+              {/* Chart */}
+              <IsoWidgetBox height={450} style={{ overflow: 'hidden' }}>
+                <GoogleChart {...googleChartConfigs.TrendLines} />
+              </IsoWidgetBox>
+            </IsoWidgetsWrapper>
+          </Col>
+
+          <Col lg={8} md={24} sm={24} xs={24} style={colStyle}>
+            <IsoWidgetsWrapper>
+              <IsoWidgetBox height={450} style={{ overflow: 'hidden' }}>
+                {/* Google Bar Chart */}
+                <GoogleChart {...googleChartConfigs.ComboChart} />
+              </IsoWidgetBox>
+            </IsoWidgetsWrapper>
+          </Col>
+        </Row>
       </div>
     </LayoutWrapper>
   );

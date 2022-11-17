@@ -13,7 +13,6 @@ import IntlMessages from '@iso/components/utility/intlMessages';
 import { ContactsWrapper } from './Contacts.styles';
 import Scrollbar from '@iso/components/utility/customScrollBar';
 
-
 const {
   changeContact,
   addContact,
@@ -74,12 +73,8 @@ export default function Contacts() {
           <div className="isoContactControl">
             
           </div>
-          
         )}
-        
       </Layout>
-      
-      
     </ContactsWrapper>
   );
 }

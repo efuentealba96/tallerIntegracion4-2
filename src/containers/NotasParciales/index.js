@@ -51,15 +51,15 @@ export default function SimpleAccordion() {
     const [Carrera, setCarrera] = React.useState('');
     const[Semestre,setSemestre]=React.useState('');
     const[Curso,setCurso]=React.useState('');
-    const handleChange = (event: SelectChangeEvent) => {
-        setCarrera(event.target.value);
-        setSemestre(event.target.value);
-        setCurso(event.target.value);
-    };
+  const handleChange = (event: SelectChangeEvent) => {
+    setCarrera(event.target.value);
+    setSemestre(event.target.value);
+    setCurso(event.target.value);
+  };
   
     return(
         <div>
-            <Accordion style={{float:"scroll"}}>
+            <Accordion>
                 <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
