@@ -49,6 +49,7 @@ export default function Dashboard() {
               height: appHeight,
             }}
           >
+            
             <Content className="isomorphicContent" style={styles.content}>
               <DashboardRoutes />
             </Content>
