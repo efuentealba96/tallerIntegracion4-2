@@ -5,7 +5,7 @@ import invoicesSagas from '@iso/redux/invoice/saga';
 import mailSagas from '@iso/redux/mail/saga';
 import notesSagas from '@iso/redux/notes/saga';
 import todosSagas from '@iso/redux/todos/saga';
-import ecommerceSaga from '@iso/redux/ecommerce/saga';
+
 import cardsSagas from '@iso/redux/card/saga';
 import chatSagas from '@iso/redux/chat/sagas';
 import youtubeSearchSagas from '@iso/redux/youtubeSearch/sagas';

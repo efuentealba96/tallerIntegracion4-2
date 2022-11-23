@@ -61,7 +61,7 @@ export default function Cuerpo() {
   const [Año, setAño] = React.useState("");
   const [Semestre, setSemestre] = React.useState("");
   const [CertificadoConducta, setCertificadoConducta] = React.useState("");
-  const [CertificadoPermanencia, setCertificadoPermanencia] =
+  const [CertificadoPermanencia, setCertificadoPermanencia] =React.useState("")
     React.useState("");
   const [ConvenioServicios, setConvenioServicios] = React.useState("");
   const [ApelacionCausal, setApelacionCausal] = React.useState("");

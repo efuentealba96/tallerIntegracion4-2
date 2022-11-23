@@ -8,7 +8,7 @@ export default function({ label, details, children }) {
 
       <div className="isoReportsWidgetBar">Hola Comunidad Uct Nuestro primer aviso como NUEVO Portal del estudiante.</div>
 
-      <p className="isoDescription"><img src={logo} style={{width:"200px",height:"200px"}}></img></p>
+      <p className="isoDescription"><img src={logo} style={{width:"200px",height:"200px"}} alt=""></img></p>
     </ReportWidgetWrapper>
   );
 }

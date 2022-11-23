@@ -2,8 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Layout } from 'antd';
 import appActions from '@iso/redux/app/actions';
-import TopbarNotification from './TopbarNotification';
-import TopbarMessage from './TopbarMessage';
+
 import TopbarSearch from './TopbarSearch';
 import TopbarUser from './TopbarUser';
 
@@ -13,7 +12,7 @@ const { Header } = Layout;
 const { toggleCollapsed } = appActions;
 
 export default function Topbar() {
-  const [selectedItem, setSelectedItem] = React.useState('');
+  const [SelectedItem, setSelectedItem] = React.useState('');
   const customizedTheme = useSelector(state => state.ThemeSwitcher.topbarTheme);
   const { collapsed, openDrawer } = useSelector(state => state.App);
   const dispatch = useDispatch();

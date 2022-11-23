@@ -1,6 +1,6 @@
 import React from 'react';
 import DualListBox from 'react-dual-listbox';
-import ChatBot from 'react-simple-chatbot';
+
 
 const options = [
     { value: 'info-1158', label: 'INFO-1158/Teoria de Grafos/Sec2/SinProfesor' },

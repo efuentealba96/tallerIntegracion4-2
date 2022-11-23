@@ -1,10 +1,9 @@
 import language from '@iso/config/language.config';
 
 import englishLang from '@iso/assets/images/flag/uk.svg';
-import chineseLang from '@iso/assets/images/flag/china.svg';
+
 import spanishLang from '@iso/assets/images/flag/spain.svg';
-import frenchLang from '@iso/assets/images/flag/france.svg';
-import italianLang from '@iso/assets/images/flag/italy.svg';
+
 
 const config = {
   defaultLanguage: language,
