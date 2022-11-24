@@ -28,8 +28,8 @@ const topbarTheme = {
     },
     {
       themeName: 'theme1',
-      buttonColor: '#e0364c',
-      backgroundColor: '#e0364c',
+      buttonColor: '#eb0e2b',
+      backgroundColor: '#eb0e2b',
       textColor: '#ffffff',
     },
     {
@@ -83,8 +83,8 @@ const sidebarTheme = {
     },
     {
       themeName: 'theme1',
-      buttonColor: '#e0364c',
-      backgroundColor: '#e0364c',
+      buttonColor: '#eb0e2b',
+      backgroundColor: '#eb0e2b',
       textColor: '#ffffff',
     },
     {
@@ -138,20 +138,20 @@ const layoutTheme = {
     },
     {
       themeName: 'theme1',
-      buttonColor: '#ffffff',
-      backgroundColor: '#ffffff',
+      buttonColor: '#1058de',
+      backgroundColor: '#1058de',
       textColor: '#323232',
     },
     {
       themeName: 'theme2',
-      buttonColor: '#F9F9F9',
-      backgroundColor: '#F9F9F9',
+      buttonColor: '#b80b0b',
+      backgroundColor: '#b80b0b',
       textColor: '#ffffff',
     },
     {
       themeName: 'theme3',
-      buttonColor: '#ebebeb',
-      backgroundColor: '#ebebeb',
+      buttonColor: '#01031a',
+      backgroundColor: '#01031a',
       textColor: '#ffffff',
     },
   ],

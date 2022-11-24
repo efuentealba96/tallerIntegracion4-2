@@ -1,5 +1,5 @@
-import userpic from '@iso/assets/images/user1.png';
-import profilebg from '@iso/assets/images/profile-bg.jpg';
+import userpic from '@iso/assets/images/pingo.jpg';
+import profilebg from '@iso/assets/images/universidadhero.jpg';
 // posts
 import post1 from '@iso/assets/images/posts/1.png';
 import post2 from '@iso/assets/images/posts/2.png';
@@ -15,8 +15,8 @@ import post11 from '@iso/assets/images/posts/11.png';
 
 const profileData = {
   id: 1,
-  name: 'Samwell Martina',
-  username: '@samwell_martina',
+  name: 'Usuario',
+  username: '@Usuario2022@alu.uct.cl',
   avatar: userpic,
   profile_bg: profilebg,
   post: [

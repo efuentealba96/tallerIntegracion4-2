@@ -73,7 +73,7 @@ export const PRIVATE_ROUTE = {
 	FRAPPE_CHART: '/frappeChart',
 	INVOICE: '/invoice',
 	CHAT: '/chat',
-	PROFILE: '/my-profile',
+	PROFILE: '/perfil',
 	SWIPER_SLIDER: '/swiperslider',
 	
 };

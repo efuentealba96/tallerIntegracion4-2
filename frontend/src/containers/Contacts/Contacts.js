@@ -1,22 +1,22 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import contactActions from '@iso/redux/contacts/actions';
-import { CheckOutlined, EditOutlined } from '@ant-design/icons';
+
 import { Layout } from 'antd';
-import Button from '@iso/components/uielements/button';
+
 import ContactList from '@iso/components/Contacts/ContactList';
 import SingleContactView from '@iso/components/Contacts/SingleView';
 import EditContactView from '@iso/components/Contacts/EditView';
-import DeleteButton from '@iso/components/Contacts/DeleteButton';
+
 import { otherAttributes } from './data';
-import IntlMessages from '@iso/components/utility/intlMessages';
+
 import { ContactsWrapper } from './Contacts.styles';
 import Scrollbar from '@iso/components/utility/customScrollBar';
 
 
 const {
   changeContact,
-  addContact,
+
   editContact,
   deleteContact,
   viewChange,

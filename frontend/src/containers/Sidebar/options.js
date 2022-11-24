@@ -1,7 +1,7 @@
 const options = [
 	{
 		key: 'mailbox',
-		label: 'email',
+		label: 'Email',
 		leftIcon: 'ion-android-mail',
 	},
 	
@@ -20,7 +20,7 @@ const options = [
 	
 	{
 		key: 'contacts',
-		label: 'contacts',
+		label: 'Contactos',
 		leftIcon: 'ion-android-person-add',
 	},
 	
@@ -33,7 +33,7 @@ const options = [
 	
 	{
 		key: 'Documents',
-		label: 'Documents',
+		label: 'Documentos',
 		leftIcon: 'ion-document',
 	},
 	{
@@ -53,7 +53,7 @@ const options = [
 	},
 	{
 		key: 'my-profile',
-		label: 'profile',
+		label: 'Perfil',
 		leftIcon: 'ion-person',
 	},
 	

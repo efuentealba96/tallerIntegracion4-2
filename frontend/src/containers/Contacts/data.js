@@ -7,24 +7,24 @@ export const otherAttributes = [
 const contactList = JSON.parse(
   `[{
     "id": 22143,
-    "avatar": "https://images.unsplash.com/photo-1554457686-c8409f3d8156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2029&q=80",
+    "avatar": "https://5368fbd5ff.cbaul-cdnwnd.com/535f8b78cf70da6f094b00fb11464aeb/200000014-7ef0d7fec1/uct.png",
 
-    "name": "Pedro Sanchez",
+    "name": "Luis Caro",
     "Email": "User@uct.cl",
 
     "Carrera": "$Carrera"
   }, {
     "id": 17385,
-    "avatar": "https://images.unsplash.com/photo-1554457686-c8409f3d8156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2029&q=80",
+    "avatar": "https://5368fbd5ff.cbaul-cdnwnd.com/535f8b78cf70da6f094b00fb11464aeb/200000014-7ef0d7fec1/uct.png",
 
-    "name": "Pedro Sanchez",
+    "name": "Alejandro Mellado",
     "Email": "User@uct.cl",
 
 
     "Carrera": "$Carrera"
   }, {
     "id": 85838,
-    "avatar": "https://images.unsplash.com/photo-1554457686-c8409f3d8156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2029&q=80",
+    "avatar": "https://5368fbd5ff.cbaul-cdnwnd.com/535f8b78cf70da6f094b00fb11464aeb/200000014-7ef0d7fec1/uct.png",
 
     "name": "Julio Rojas",
     "Email": "User@uct.cl",
@@ -32,7 +32,7 @@ const contactList = JSON.parse(
     "Carrera": "$Carrera"
   }, {
     "id": 2791,
-    "avatar": "https://images.unsplash.com/photo-1554457686-c8409f3d8156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2029&q=80",
+    "avatar": "https://5368fbd5ff.cbaul-cdnwnd.com/535f8b78cf70da6f094b00fb11464aeb/200000014-7ef0d7fec1/uct.png",
 
     "name": "Eliott Jamil",
     "Email": "User@uct.cl",
@@ -41,24 +41,24 @@ const contactList = JSON.parse(
     "Carrera": "$Carrera"  
   }, {
     "id": 67493,
-    "avatar": "https://images.unsplash.com/photo-1554457686-c8409f3d8156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2029&q=80",
+    "avatar": "https://5368fbd5ff.cbaul-cdnwnd.com/535f8b78cf70da6f094b00fb11464aeb/200000014-7ef0d7fec1/uct.png",
   
-    "name": "Eliott Jamil",
+    "name": "Carla Arias (Secretaria Carrera)",
     "Email": "User@uct.cl",
   
     "Carrera": "$Carrera" 
   }, {
     "id": 75593,
-    "avatar": "https://images.unsplash.com/photo-1554457686-c8409f3d8156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2029&q=80",
+    "avatar": "https://5368fbd5ff.cbaul-cdnwnd.com/535f8b78cf70da6f094b00fb11464aeb/200000014-7ef0d7fec1/uct.png",
 
-    "name": "Julio Rojas",
+    "name": "Ignacio Lincolao",
     "Email": "User@uct.cl",
 
   
     "Carrera": "$Carrera" 
   }, {
     "id": 90096,
-    "avatar": "https://images.unsplash.com/photo-1554457686-c8409f3d8156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2029&q=80",
+    "avatar": "https://5368fbd5ff.cbaul-cdnwnd.com/535f8b78cf70da6f094b00fb11464aeb/200000014-7ef0d7fec1/uct.png",
 
     "name": "Marcos Levano",
     "Email": "User@uct.cl",
@@ -67,15 +67,15 @@ const contactList = JSON.parse(
     "Carrera": "$Carrera" 
   }, {
     "id": 15783,
-    "avatar": "https://images.unsplash.com/photo-1554457686-c8409f3d8156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2029&q=80",
+    "avatar": "https://5368fbd5ff.cbaul-cdnwnd.com/535f8b78cf70da6f094b00fb11464aeb/200000014-7ef0d7fec1/uct.png",
 
-    "name": "Marcos Levano",
+    "name": "Patricia Riquelme Mendoza (Secretaia Decanato)",
     "Email": "User@uct.cl",
 
     "Carrera": "$Carrera" 
   }, {
     "id": 42122,
-    "avatar": "https://images.unsplash.com/photo-1554457686-c8409f3d8156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2029&q=80",
+    "avatar": "https://5368fbd5ff.cbaul-cdnwnd.com/535f8b78cf70da6f094b00fb11464aeb/200000014-7ef0d7fec1/uct.png",
 
     "name": "Pedro Sanchez",
     "Email": "User@uct.cl",
@@ -84,9 +84,9 @@ const contactList = JSON.parse(
     "Carrera": "$Carrera" 
   }, {
     "id": 5869,
-    "avatar": "https://images.unsplash.com/photo-1554457686-c8409f3d8156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2029&q=80",
+    "avatar": "https://5368fbd5ff.cbaul-cdnwnd.com/535f8b78cf70da6f094b00fb11464aeb/200000014-7ef0d7fec1/uct.png",
 
-    "name": "Pedro Sanchez ",
+    "name": "Carlos Oñate (Coordinador Vinculo)",
     "Email": "User@uct.cl",
 
 
