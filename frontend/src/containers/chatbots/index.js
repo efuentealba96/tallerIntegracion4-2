@@ -1,10 +1,11 @@
 import React from 'react'
 import ChatBot from 'react-simple-chatbot';
-
+import "./chatbot.css"
 export default function chatbot(){
     return(
         <>
-            <ChatBot
+          
+            <ChatBot className="Bot"
                 style={{float:"right"}}
                 headerTitle="Uctin"
                 
@@ -26,6 +27,7 @@ export default function chatbot(){
                   },
                 ]}
                 />
+          
         </>
     )
 }

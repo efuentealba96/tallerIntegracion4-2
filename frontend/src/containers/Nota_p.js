@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import LayoutContentWrapper from "@iso/components/utility/layoutWrapper";
 import LayoutContent from "@iso/components/utility/layoutContent";
 import "./estiloNota.css";
-import ChatBot from "./chatbots/index"
+import ChatBot from "./chatbots/index2"
 import Cuerpo from "./../containers/NotaP/index.js"
 import CardsP from "./Cards/CardsP";
 

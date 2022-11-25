@@ -1,0 +1,19 @@
+.bot{
+  z-index:"1";
+  position: absolute;
+}
+
+.show-element {
+    /*duracion de la animacion, puedes variar el tiempo, entre mas grande mas tarda el efecto*/
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    /*le indicas que animacion quieres aplicarle, animacion hecha por ti en un keyframe*/
+    animation-name: fadeIn;
+    background-color: rgb(225, 225, 255);
+  }
+  
+  .hide-element {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-name: fadeOut;
+  }
