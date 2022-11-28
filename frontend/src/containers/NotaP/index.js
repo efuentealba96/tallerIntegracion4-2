@@ -13,36 +13,12 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { endpoint, axios } from "../../services/http";
+import Table from "./tablaNotap"
 export default function Cuerpo() {
   
 
-  const certificadoConducta = async () => {
-    await axios
-      .post(
-        `${endpoint}/documento-conducta`,
-        { rut: 201577306 },
-        { responseType: "blob" }
-      )
-      .then((response) => {
-        const file = new Blob([response.data], { type: "application/pdf" });
-        const fileURl = URL.createObjectURL(file);
-        window.open(fileURl, "_blank");
-      });
-  };
-
-  const certificadoPrestaciones = async () => {
-    await axios
-      .post(
-        `${endpoint}/documento-conducta`,
-        { rut: 201577306 },
-        { responseType: "blob" }
-      )
-      .then((response) => {
-        const file = new Blob([response.data], { type: "application/pdf" });
-        const fileURl = URL.createObjectURL(file);
-        window.open(fileURl, "_blank");
-      });
-  };
+  
+  
   const [Carrera, setCarrera] = React.useState("");
   const [Accion, setAccion] = React.useState("");
   const [CertificadoAcademico, setCertificadoAcademico] = React.useState("");
@@ -121,7 +97,7 @@ export default function Cuerpo() {
               </Select>
             </FormControl>
             
-
+            
           </Typography>
         </AccordionDetails>
      </Accordion>
@@ -160,7 +136,10 @@ export default function Cuerpo() {
               </Select>
             </FormControl>
             
-            
+            <hr/>
+            <h1>DATOS DE LA SOLICITUD</h1>
+            <br/>
+            <Table/>
             
 
           </Typography>

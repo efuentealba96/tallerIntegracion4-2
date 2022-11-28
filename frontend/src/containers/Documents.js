@@ -11,8 +11,10 @@ export default class extends Component {
         <LayoutContent>
           <Cards/>
           <Cuerpo/>
-          <ChatBot/>
+          
+          
         </LayoutContent>
+        
       </LayoutContentWrapper>
     );
   }

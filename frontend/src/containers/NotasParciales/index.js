@@ -10,15 +10,28 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
+
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import TableCell, { tableCellClasses } from '@mui/material/TableCell';
+import { styled } from '@mui/material/styles';
+
+const StyledTableCell = styled(TableCell)(({ theme }) => ({
+    [`&.${tableCellClasses.head}`]: {
+      backgroundColor: theme.palette.common.black,
+      color: theme.palette.common.white,
+    },
+    [`&.${tableCellClasses.body}`]: {
+      fontSize: 14,
+    },
+  }));
+
 
 function createData(
     Descripcion: string,
-    fecha: Date,
+    fecha: string,
     porcentaje: number,
     Nota: number,
     TipoEvaluacion: string,
@@ -27,7 +40,7 @@ function createData(
   }
   
   const rows = [
-    createData('INFO-1147',15-16-2022,67,20,'Prueba')
+    createData('INFO-1147',"15/16/2022",20,50,'Prueba')
     
    
   ];
@@ -130,12 +143,12 @@ export default function SimpleAccordion() {
                 <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
                     <TableHead>
                     <TableRow>
-                        <TableCell>Curso </TableCell>
-                        <TableCell align="right">Descripcion</TableCell>
-                        <TableCell align="right">fecha</TableCell>
-                        <TableCell align="right">Nota</TableCell>
-                        <TableCell align="right">porcentaje</TableCell>
-                        <TableCell align="right">Tipo de evaluacion</TableCell>
+                        
+                        <StyledTableCell align="center" >Descripcion</StyledTableCell>
+                        <StyledTableCell align="center">fecha</StyledTableCell>
+                        <StyledTableCell align="center">Nota</StyledTableCell>
+                        <StyledTableCell align="center">porcentaje</StyledTableCell>
+                        <StyledTableCell align="center">Tipo de evaluacion</StyledTableCell>
                     </TableRow>
                     </TableHead>
                     <TableBody>
@@ -144,14 +157,12 @@ export default function SimpleAccordion() {
                         key={row.name}
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
-                        <TableCell component="th" scope="row">
-                            {row.name}
-                        </TableCell>
-                        <TableCell align="right">{row.Descripcion}</TableCell>
-                        <TableCell align="right">{row.fecha2}</TableCell>
-                        <TableCell align="right">{row.Nota}</TableCell>
-                        <TableCell align="right">{row.porcentaje}</TableCell>
-                        <TableCell align="right">{row.TipoEvaluacion}</TableCell>
+                        
+                        <TableCell align="center" >{row.Descripcion}</TableCell>
+                        <TableCell align="center">{row.fecha}</TableCell>
+                        <TableCell align="center">{row.Nota}</TableCell>
+                        <TableCell align="center">{row.porcentaje}</TableCell>
+                        <TableCell align="center">{row.TipoEvaluacion}</TableCell>
                         </TableRow>
                     ))}
                     </TableBody>
@@ -231,11 +242,11 @@ export default function SimpleAccordion() {
                 <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
                     <TableHead>
                     <TableRow>
-                        <TableCell>Curso </TableCell>
-                        <TableCell align="right">N° clases</TableCell>
-                        <TableCell align="right">fecha</TableCell>
-                        <TableCell align="right">Hora Inicio</TableCell>
-                        <TableCell align="right">Asistencia</TableCell>
+                        
+                        <StyledTableCell align="center">N° clases</StyledTableCell>
+                        <StyledTableCell align="center">fecha</StyledTableCell>
+                        <StyledTableCell align="center">Hora Inicio</StyledTableCell>
+                        <StyledTableCell align="center">Asistencia</StyledTableCell>
                         
                     </TableRow>
                     </TableHead>
@@ -246,13 +257,11 @@ export default function SimpleAccordion() {
                         key={rows2.name}
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
-                        <TableCell component="th" scope="row">
-                            {rows2.name}
-                        </TableCell>
-                        <TableCell align="right">{rows2.Nclases}</TableCell>
-                        <TableCell align="right">{rows2.fecha}</TableCell>
-                        <TableCell align="right">{rows2.HoraInicio}</TableCell>
-                        <TableCell align="right">{rows2.asistencia}</TableCell>
+                        
+                        <TableCell align="center">{rows2.Nclases}</TableCell>
+                        <TableCell align="center">{rows2.fecha2}</TableCell>
+                        <TableCell align="center">{rows2.HoraInicio}</TableCell>
+                        <TableCell align="center">{rows2.asistencia}</TableCell>
                        
                         </TableRow>
                     ))}
