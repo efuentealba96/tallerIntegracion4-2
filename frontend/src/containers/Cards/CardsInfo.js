@@ -25,7 +25,9 @@ function CardsInfo() {
           <div className="col-md-4" key={id}>
             <CardInfo  title={title} url={url} />
             <br/>
-            <h2 bb-translate="">Información básica</h2>
+            
+            
+            
             
           </div>
         ))}

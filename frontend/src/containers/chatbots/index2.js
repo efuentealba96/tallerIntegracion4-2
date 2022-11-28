@@ -15,7 +15,7 @@ export default function YourAwesomeComponent () {
               icon="ion-power"
               rotate={true}
               onClick={() => setMostrarComponente(!mostrarComponente)}
-              styles={{backgroundColor: "#1EA6C8"}}/>
+              styles={{backgroundColor: "#1EA6C8 "}}/>
       </Container>
   )
 }

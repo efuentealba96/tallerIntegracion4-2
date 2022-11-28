@@ -9,6 +9,7 @@ import Wrapper, { Banner,  ContentWrapper } from './Profile.styles';
 import { useSelector, useDispatch } from 'react-redux';
 import profileActions from '@iso/redux/profile/actions';
 import CardsInfo from '../Cards/CardsInfo';
+import Table from "./tableprofile"
 
 const Perfil = () => {
   const data = useSelector(state => state.profile.data);
@@ -69,7 +70,7 @@ const Perfil = () => {
           <ContentWrapper>
             <Container className="container">
               <CardsInfo/>
-              
+              <Table/>
               <Modal
                 wrapClassName="follow-modal"
                 visible={visible}
