@@ -69,8 +69,8 @@ const Perfil = () => {
 
           <ContentWrapper>
             <Container className="container">
-              <CardsInfo/>
-              <Table/>
+            <Table/>
+              
               <Modal
                 wrapClassName="follow-modal"
                 visible={visible}
@@ -79,8 +79,11 @@ const Perfil = () => {
               >
                 
               </Modal>
+              
             </Container>
+            
           </ContentWrapper>
+          
         </>
       ) : (
         <div

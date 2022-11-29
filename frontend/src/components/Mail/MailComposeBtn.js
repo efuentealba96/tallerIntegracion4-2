@@ -14,7 +14,7 @@ export default function(props) {
           }
         }}
       >
-        <IntlMessages id="email.compose" />
+        <IntlMessages id="Redactar" />
       </button>
     </MailComposeBtnWrapper>
   );

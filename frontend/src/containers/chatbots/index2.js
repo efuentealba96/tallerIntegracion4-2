@@ -11,7 +11,7 @@ export default function YourAwesomeComponent () {
           
           <Button
               color="primary"
-              tooltip="The big plus button!"
+              tooltip="ChatBot"
               icon="ion-power"
               rotate={true}
               onClick={() => setMostrarComponente(!mostrarComponente)}

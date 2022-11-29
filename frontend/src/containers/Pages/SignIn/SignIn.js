@@ -55,7 +55,7 @@ export default function SignIn() {
               <div className="isoInputWrapper">
                 <Input
                   size="large"
-                  placeholder="Username"
+                  placeholder="Usuario"
                   autoComplete="true"
                 />
               </div>
@@ -64,17 +64,17 @@ export default function SignIn() {
                 <Input
                   size="large"
                   type="password"
-                  placeholder="Password"
+                  placeholder="Contraseña"
                   autoComplete="false"
                 />
               </div>
 
               <div className="isoInputWrapper isoLeftRightComponent">
                 <Checkbox>
-                  <IntlMessages id="page.signInRememberMe" />
+                  <IntlMessages id="Recordar Contraseña" />
                 </Checkbox>
                 <Button type="primary" onClick={handleLogin}>
-                  <IntlMessages id="page.signInButton" />
+                  <IntlMessages id="Entrar" />
                 </Button>
               </div>
 
@@ -85,11 +85,9 @@ export default function SignIn() {
             
             <div className="isoCenterComponent isoHelperWrapper">
               <Link to="/forgotpassword" className="isoForgotPass">
-                <IntlMessages id="page.signInForgotPass" />
+                <IntlMessages id="Olvide Mi Contraseña" />
               </Link>
-              <Link to="/signup">
-                <IntlMessages id="page.signInCreateAccount" />
-              </Link>
+              
             </div>
           </div>
         </div>

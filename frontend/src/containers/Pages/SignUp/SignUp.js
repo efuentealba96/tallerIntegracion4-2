@@ -45,7 +45,7 @@ export default function SignUp() {
             </div>
 
             <div className="isoInputWrapper">
-              <Input size="large" placeholder="Username" />
+              <Input size="large" placeholder="Usuario" />
             </div>
 
             <div className="isoInputWrapper">
@@ -53,7 +53,7 @@ export default function SignUp() {
             </div>
 
             <div className="isoInputWrapper">
-              <Input size="large" type="password" placeholder="Password" />
+              <Input size="large" type="password" placeholder="Contraseña" />
             </div>
 
             <div className="isoInputWrapper">

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { palette } from 'styled-theme';
-import bgImage from '@iso/assets/images/image3.jpg';
+
 import WithDirection from '@iso/lib/helpers/rtl';
 
 const ForgotPasswordStyleWrapper = styled.div`
@@ -11,8 +11,8 @@ const ForgotPasswordStyleWrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
   position: relative;
-  background: url(${bgImage}) no-repeat center center;
-  background-size: cover;
+  background: url(${"https://www.uct.cl/content/uploads/header-nuevas-carreras-uct-2023.jpg"}) no-repeat center center;
+  background-size: 2400px 1200px;
 
   &:before {
     content: '';

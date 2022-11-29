@@ -79,62 +79,7 @@ export default function table () {
                 </Table>
                 </TableContainer>
                 <hr/><br/>
-                <h2 bb-translate="">Información Adicional</h2>
-                <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-                    <TableHead>
-                    <TableRow>
-                        
-                        <StyledTableCell align="center">Direccion Postal</StyledTableCell>
-                        <StyledTableCell align="center">Numero Telefonico</StyledTableCell>
-                        
-                    </TableRow>
-                    </TableHead>
-                    <TableBody>
-                    {rows.map((row) => (
-                        <TableRow
-                        key={row.name}
-                        sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                        >
-                        
-                        <TableCell align="center">{row.CodigoPostal}</TableCell>
-                        <TableCell align="center">{row.numerotelefonico}</TableCell>
-                       
-                        </TableRow>
-                    ))}
-                    </TableBody>
-                </Table>
-                </TableContainer>
-                <hr/><br/>
-                <h2 bb-translate="">Información Laboral</h2>
-                <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-                    <TableHead>
-                    <TableRow>
-                        
-                        <StyledTableCell align="center">Empresa</StyledTableCell>
-                        <StyledTableCell align="center">Cargo</StyledTableCell>
-                        <StyledTableCell align="center">Departamento</StyledTableCell>
-                        
-                    </TableRow>
-                    </TableHead>
-                    <TableBody>
-                    {rows.map((row) => (
-                        <TableRow
-                        key={row.name}
-                        sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                        >
-                        
-                        <TableCell align="center">{row.empresa}</TableCell>
-                        <TableCell align="center">{row.cargo}</TableCell>
-                        <TableCell align="center">{row.departamento}</TableCell>
-                       
-                        </TableRow>
-                    ))}
-                    </TableBody>
-                </Table>
-                </TableContainer>
-
+                
 
 
 

@@ -45,7 +45,7 @@ export default function ContactList(props) {
     <ContactListWrapper className="isoContactListWrapper">
       <InputSearch
         placeholder={intl.formatMessage({
-          id: 'contactlist.searchContacts',
+          id: 'Buscar Contacto',
         })}
         value={search}
         onChange={onChange}

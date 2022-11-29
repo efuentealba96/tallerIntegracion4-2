@@ -82,7 +82,7 @@ export default function ComposeMail(props) {
           onClick={e => notification('success', `Correo Enviado`, '')}
           className="isoSendMailBtn"
         >
-          <IntlMessages id="email.send" />
+          <IntlMessages id="Enviar" />
         </Button>
       </div>
     </ComposeForm>

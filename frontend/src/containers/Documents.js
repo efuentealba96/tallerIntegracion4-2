@@ -14,8 +14,10 @@ export default class extends Component {
           
           
         </LayoutContent>
-        
+        <hr/>
+        <hr/>
       </LayoutContentWrapper>
+    
     );
   }
 }

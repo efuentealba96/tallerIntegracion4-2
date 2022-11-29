@@ -90,7 +90,7 @@ export default function DesktopView(props) {
           </div>
           <div className="isoSearchMailWrapper">
             <InputSearch
-              placeholder="Search Email"
+              placeholder="Buscar Email"
               value={search}
               className="isoSearchEmail"
               onChange={event => setSearch(event.target.value)}

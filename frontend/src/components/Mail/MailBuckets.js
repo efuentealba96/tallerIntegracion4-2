@@ -2,13 +2,13 @@ import React from 'react';
 import MailBucket from './MailBucket.style';
 
 const buckets = [
-  'Inbox',
-  'Sent',
-  'Drafts',
-  'Trash',
-  'Important',
-  'spam',
-  'Starred',
+  'Recibidos',
+  'Enviados',
+  'Borrador',
+  'Papelera',
+  'Importantes',
+  'Spam',
+  'Destacados',
 ];
 
 function getUnread(mails) {

@@ -12,16 +12,16 @@ export default function() {
         <div className="isoFormContent">
           <div className="isoLogoWrapper">
             <Link to="/dashboard">
-              <IntlMessages id="page.forgetPassTitle" />
+              <IntlMessages id="Olvideste tu contraseña" />
             </Link>
           </div>
 
           <div className="isoFormHeadText">
             <h3>
-              <IntlMessages id="page.forgetPassSubTitle" />
+              <IntlMessages id="Olvidaste tu contraseña , recuperala ingresando tu Email" />
             </h3>
             <p>
-              <IntlMessages id="page.forgetPassDescription" />
+              <IntlMessages id="Ingresa tu Email y te enviaremos una respuesta para recuperar tu contraseña." />
             </p>
           </div>
 
@@ -32,7 +32,7 @@ export default function() {
 
             <div className="isoInputWrapper">
               <Button type="primary">
-                <IntlMessages id="page.sendRequest" />
+                <IntlMessages id="Enviar" />
               </Button>
             </div>
           </div>

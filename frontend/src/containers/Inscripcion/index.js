@@ -16,7 +16,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-import Inscripcion from './index2';
+import Inscripcion from './index3';
 
 
 function createData(
@@ -74,6 +74,7 @@ export default function SimpleAccordion() {
                 </FormControl>
 
                 <Inscripcion/>
+                <button style={{float:"right" , backgroundColor:"#1EA6C8 "}}>Añadir Cursos</button>
                 <TableContainer component={Paper}>
                 <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
                     <TableHead>
